@@ -1,6 +1,9 @@
-# example-codeplug
+# kf7hvm-codeplug
 
-Generate DMR codeplugs from a variety of online sources using
+KF7HVM Customized Codeplug. See
+[example-codeplug](https://github.com/mycodeplug/example-codeplug).
+
+Generated from a variety of online sources using
 [dzcb](https://github.com/mycodeplug/dzcb).
 
 ## Requirements
