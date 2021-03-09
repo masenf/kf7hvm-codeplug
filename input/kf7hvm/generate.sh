@@ -12,13 +12,14 @@ python -m dzcb \
     --k7abd $DIR/k7abd \
     --repeaterbook-proximity-csv "$DIR/prox.csv" \
     --repeaterbook-state washington oregon \
-    --repeaterbook-name-format '{Callsign} {Nearest City} {Landmark}' \
     --scanlists-json "$DIR/scanlists.json" \
     --exclude "$DIR/exclude.csv" \
     --order "$DIR/order.csv" \
     --replacements "$DIR/replacements.csv" \
     --anytone \
     --dmrconfig "$DIR/example-d878uv.conf" \
+                "$DIR/md-uv380-kf7hvm.conf" \
+                "$DIR/gd77-kf7hvm.conf" \
     --farnsworth-template-json "$DIR/example-md-uv380.json" \
     --gb3gf \
--- "$OUTPUT/$(basename "$DIR")"
+-- $OUTPUT/$(basename "$DIR")

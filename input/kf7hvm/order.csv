@@ -1,11 +1,22 @@
 zones,contacts,channels
 PNWDigital,Oregon 1,Rainier Hill
-Hotspot,Washington 1,DPHS Static
-Local,Washington 2,DPHS Wide
+Hotspot,Washington 2,DPHS Static
+Local,Washington 1,DPHS Wide
 SeattleDMR,Cascades 1,
-Longview WA VHF 35mi,Local 1,
-Longview WA UHF 35mi,Local 2,
-Simplex A VHF,Parrot 1,
+Rainier Hill,Local 1,
+Longview,Local 2,
+DPHS Static,Parrot 1,
+DPHS Wide,,
+UL Tone,,
+Simplex D UHF,,
+Simplex A VHF,,
 Simplex A UHF,,
 Simplex D VHF,,
-Simplex D UHF,,
+Kelso/Columbia,,
+Ariel/Ariel VHF,,
+Boistfort/BawFaw,,
+Corbett/Lookout,,
+HoodRiver/Burd,,
+Olympia/Cap Pk,,
+Portland,,
+Salem,,
