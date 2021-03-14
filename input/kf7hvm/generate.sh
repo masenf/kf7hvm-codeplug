@@ -13,7 +13,6 @@ python -m dzcb \
     --repeaterbook-proximity-csv "$DIR/prox.csv" \
     --repeaterbook-state washington oregon \
     --scanlists-json "$DIR/scanlists.json" \
-    --exclude "$DIR/exclude.csv" \
     --order "$DIR/order.csv" \
     --replacements "$DIR/replacements.csv" \
     --anytone \
