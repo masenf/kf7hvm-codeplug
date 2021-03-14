@@ -1,15 +1,24 @@
 #!/usr/bin/env bash
 
+# This generates the same codeplug as generate.py
+# using bash scripting. Linux or macOS only.
+
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 OUTPUT=${OUTPUT:-$DIR/../../OUTPUT}
 python -m dzcb \
     --pnwdigital \
     --seattledmr \
     --default-k7abd \
-    --repeaterbook-state washington oregon \
-    --repeaterbook-proximity-csv "$DIR/prox.csv" \
     --k7abd $DIR/k7abd \
-    --farnsworth-template-json "$DIR/example-md-uv380.json" \
+    --repeaterbook-proximity-csv "$DIR/prox.csv" \
+    --repeaterbook-state washington oregon \
     --scanlists-json "$DIR/scanlists.json" \
-    --order-json "$DIR/order.json" \
-$OUTPUT/$(basename "$DIR")
+    --order "$DIR/order.csv" \
+    --replacements "$DIR/replacements.csv" \
+    --anytone \
+    --dmrconfig "$DIR/example-d878uv.conf" \
+                "$DIR/md-uv380-kf7hvm.conf" \
+                "$DIR/gd77-kf7hvm.conf" \
+    --farnsworth-template-json "$DIR/example-md-uv380.json" \
+    --gb3gf \
+-- $OUTPUT/$(basename "$DIR")
